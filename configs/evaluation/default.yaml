@@ -1,0 +1,24 @@
+# @package evaluation
+_target_: src.eval.evaluator.Evaluator
+
+# Evaluation metrics
+metrics:
+  - accuracy
+  - precision_macro
+  - recall_macro
+  - f1_macro
+  - f1_micro
+  - confusion_matrix
+  - classification_report
+
+# Evaluation configuration
+save_predictions: true
+save_embeddings: false
+compute_embeddings: false
+
+# Visualization
+visualize:
+  confusion_matrix: true
+  classification_report: true
+  sample_predictions: true
+  num_samples_to_show: 10
